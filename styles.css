@@ -81,10 +81,17 @@ body {
   width: 280px;
 }
 
+.img-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .card__img {
   border-radius: .4rem;
   height: 100%;
   width: 100%;
+  z-index: 1;
 }
 .img-container:hover {
   background-color: var(--cyan);
@@ -99,9 +106,8 @@ body {
 
 .view-icon {
   display: none;
-  position: absolute; 
-  left: 170px;
-  top: 200px;
+  position: absolute;
+  z-index: 5;
 }
 
 .card__header {
