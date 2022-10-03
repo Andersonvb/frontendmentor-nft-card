@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+/* CSS Reset */
+
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+  /* Primary Colors */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  /* Neutral Colors */
+  --very-dark-blue-main: hsl(217, 54%, 11%);
+  --very-dark-blue-card: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: 'Outfit';
+}
+
+.container {
+  align-items: center;
+  background-color: var(--very-dark-blue-main);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+/* Card */
+
+.card {
+  background-color: var(--very-dark-blue-card);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  padding: 1.5rem;
+  width: 280px;
+}
+
+.card__img {
+  border-radius: .4rem;
+  height: 100%;
+  width: 100%;
+}
+.img-container:hover {
+  background-color: var(--cyan);
+  border-radius: .4rem;
+}
+.img-container:hover .card__img {
+  opacity: .75;
+}
+.img-container:hover .view-icon {
+  display: block;
+}
+
+.view-icon {
+  display: none;
+  position: absolute; 
+  left: 170px;
+  top: 200px;
+}
+
+.card__header {
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.card__header:hover {
+  color: var(--cyan);
+}
+
+.card__paragraph {
+  color: var(--soft-blue);
+  font-weight: 300;
+  line-height: 1.6rem;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.information__eth {
+  align-items: center;
+  color: var(--cyan);
+  display: flex;
+  font-weight: 600;
+  gap: .5rem;
+  width: 110px;
+}
+
+.information__time {
+  align-items: center;
+  color: var(--soft-blue);
+  display: flex;
+  font-weight: 400;
+  gap: .5rem;
+}
+
+.line {
+  color: var(--very-dark-blue-line);
+  width: 100%;
+}
+
+.card__author {
+  align-items: center;
+  display: flex;
+  gap: 1.4rem;
+}
+
+.card__author img {
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  width: 35px;
+}
+
+.card__author p {
+  color: var(--soft-blue);
+  font-weight: 400;
+}
+
+.name {
+  color: var(--white);
+}
+
+/* Attribution */
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
